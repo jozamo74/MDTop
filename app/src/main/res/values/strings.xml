@@ -16,4 +16,5 @@
     <string name="favoritos">Favoritos</string>
     <string name="perfil">Perfil</string>
     <string name="menu_popup_menu">popup menu</string>
+    <string name="autocomplete">Autocompletar</string>
 </resources>
