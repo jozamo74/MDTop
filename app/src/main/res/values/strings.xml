@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">MD Top</string>
+    <string name="cardview">CardView</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="enabled">enabled</string>
+    <string name="disable">disable</string>
+    <string name="card_title_demo">This is a title</string>
+    <string name="card_message_demo_small">This is a secondary text for a card with two lines in the message.</string>
+    <string name="card_message_demo_large">This is a secondary text for a card with three lines in the message. We can show details about topic like specs.</string>
+    <string name="card_secondary_demo">Secondary text</string>
+    <string name="card_subtitle_demo">This is a subtitle</string>
+    <string name="card_chip_demo">Chip</string>
+    <string name="menu">Menú</string>
+    <string name="inicio">Inicio</string>
+    <string name="favoritos">Favoritos</string>
+    <string name="perfil">Perfil</string>
+    <string name="menu_popup_menu">popup menu</string>
+</resources>
