@@ -17,4 +17,14 @@
     <string name="perfil">Perfil</string>
     <string name="menu_popup_menu">popup menu</string>
     <string name="autocomplete">Autocompletar</string>
+    <string name="dialog">Dialog</string>
+    <string name="informativo">informativo</string>
+    <string name="elegir">elegir</string>
+    <string name="confirmar">confirmar</string>
+    <string name="pantalla_completa">pantalla completa</string>
+    <string name="dialog_ok">ok</string>
+    <string name="dialog_confirm_title">Confirmar</string>
+    <string name="dialog_confirm">Confirmar</string>
+    <string name="dialog_cancel">cancelar</string>
+    <string name="message_action_success">Pulsado confirmar</string>
 </resources>

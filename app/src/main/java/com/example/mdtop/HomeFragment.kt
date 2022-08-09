@@ -1,9 +1,6 @@
 package com.example.mdtop
 
 import android.os.Bundle
-import android.view.Menu
-import android.view.MenuInflater
-import android.view.MenuItem
 import androidx.fragment.app.Fragment
 import android.view.View
 import android.widget.Toast
@@ -23,11 +20,15 @@ class HomeFragment : Fragment(R.layout.fragment_home) {
 
         binding.btnCardView.setOnClickListener {
             Toast.makeText(context, "Pulsado carview", Toast.LENGTH_SHORT).show()
-            findNavController().navigate(R.id.cardViewFragment2)
+            findNavController().navigate(R.id.cardViewFragment)
         }
 
         binding.btnMenu.setOnClickListener {
             findNavController().navigate(R.id.menuFragment)
+        }
+
+        binding.btnDialog.setOnClickListener {
+            findNavController().navigate(R.id.alertDialogFragment)
         }
     }
 
