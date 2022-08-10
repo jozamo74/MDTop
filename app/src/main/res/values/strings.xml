@@ -27,4 +27,8 @@
     <string name="dialog_confirm">Confirmar</string>
     <string name="dialog_cancel">cancelar</string>
     <string name="message_action_success">Pulsado confirmar</string>
+    <string name="save">save</string>
+    <string name="hint_name">Name</string>
+    <string name="hint_password">password</string>
+    <string name="dialog_full_screen">Full Screen</string>
 </resources>

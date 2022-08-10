@@ -33,5 +33,14 @@
         android:id="@+id/alertDialogFragment"
         android:name="com.example.mdtop.AlertDialogFragment"
         android:label="fragment_dialog"
-        tools:layout="@layout/fragment_dialog" />
+        tools:layout="@layout/fragment_dialog" >
+        <action
+            android:id="@+id/action_alertDialogFragment_to_fullScreenDialogFragment"
+            app:destination="@id/fullScreenDialogFragment" />
+    </fragment>
+    <dialog
+        android:id="@+id/fullScreenDialogFragment"
+        android:name="com.example.mdtop.FullScreenDialogFragment"
+        android:label="fragment_full_screen_dialog"
+        tools:layout="@layout/fragment_full_screen_dialog" />
 </navigation>

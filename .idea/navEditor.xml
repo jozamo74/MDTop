@@ -8,19 +8,28 @@
             <LayoutPositions>
               <option name="myPositions">
                 <map>
-                  <entry key="alertDialogFragment2">
+                  <entry key="alertDialogFragment">
                     <value>
                       <LayoutPositions>
                         <option name="myPosition">
                           <Point>
-                            <option name="x" value="223" />
-                            <option name="y" value="-22" />
+                            <option name="x" value="256" />
+                            <option name="y" value="724" />
                           </Point>
+                        </option>
+                        <option name="myPositions">
+                          <map>
+                            <entry key="action_alertDialogFragment_to_fullScreenDialogFragment">
+                              <value>
+                                <LayoutPositions />
+                              </value>
+                            </entry>
+                          </map>
                         </option>
                       </LayoutPositions>
                     </value>
                   </entry>
-                  <entry key="cardViewFragment2">
+                  <entry key="cardViewFragment">
                     <value>
                       <LayoutPositions>
                         <option name="myPosition">
@@ -32,17 +41,34 @@
                       </LayoutPositions>
                     </value>
                   </entry>
+                  <entry key="fullScreenDialogFragment">
+                    <value>
+                      <LayoutPositions>
+                        <option name="myPosition">
+                          <Point>
+                            <option name="x" value="500" />
+                            <option name="y" value="724" />
+                          </Point>
+                        </option>
+                      </LayoutPositions>
+                    </value>
+                  </entry>
                   <entry key="homeFragment">
                     <value>
                       <LayoutPositions>
                         <option name="myPosition">
                           <Point>
-                            <option name="x" value="-181" />
-                            <option name="y" value="369" />
+                            <option name="x" value="-213" />
+                            <option name="y" value="438" />
                           </Point>
                         </option>
                         <option name="myPositions">
                           <map>
+                            <entry key="action_homeFragment_to_alertDialogFragment2">
+                              <value>
+                                <LayoutPositions />
+                              </value>
+                            </entry>
                             <entry key="action_homeFragment_to_cardViewFragment2">
                               <value>
                                 <LayoutPositions />
@@ -64,7 +90,7 @@
                         <option name="myPosition">
                           <Point>
                             <option name="x" value="256" />
-                            <option name="y" value="724" />
+                            <option name="y" value="12" />
                           </Point>
                         </option>
                       </LayoutPositions>

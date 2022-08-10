@@ -1,13 +1,11 @@
 package com.example.mdtop
 
-import android.content.DialogInterface
 import android.os.Bundle
 import androidx.fragment.app.Fragment
-import android.view.LayoutInflater
 import android.view.View
-import android.view.ViewGroup
 import android.widget.ArrayAdapter
 import android.widget.Toast
+import androidx.navigation.fragment.findNavController
 import com.example.mdtop.databinding.FragmentDialogBinding
 import com.google.android.material.dialog.MaterialAlertDialogBuilder
 
@@ -30,7 +28,7 @@ class AlertDialogFragment : Fragment(R.layout.fragment_dialog) {
             }
             btnDialogChoose.setOnClickListener { dialogChoose() }
             btnDialogConfirm.setOnClickListener { dialogConfirm() }
-            btnDialogFullScreen.setOnClickListener {  }
+            btnDialogFullScreen.setOnClickListener { findNavController().navigate(R.id.fullScreenDialogFragment) }
         }
     }
 
