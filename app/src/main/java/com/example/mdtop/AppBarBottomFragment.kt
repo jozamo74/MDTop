@@ -10,6 +10,7 @@ import androidx.fragment.app.DialogFragment
 import com.example.mdtop.databinding.FragmentAppBarBottomBinding
 import com.google.android.material.bottomappbar.BottomAppBar.FAB_ALIGNMENT_MODE_CENTER
 import com.google.android.material.bottomappbar.BottomAppBar.FAB_ALIGNMENT_MODE_END
+import com.google.android.material.snackbar.Snackbar
 
 
 class AppBarBottomFragment : DialogFragment(R.layout.fragment_app_bar_bottom) {
@@ -38,17 +39,28 @@ class AppBarBottomFragment : DialogFragment(R.layout.fragment_app_bar_bottom) {
 
         binding.bottomAppBar.setOnMenuItemClickListener {
 
-            when(it.itemId) {
-
-                R.id.action_profile -> {Toast.makeText(context, "Pulsado perfil", Toast.LENGTH_SHORT).show()
+            val resMessage = when(it.itemId) {
+                R.id.action_profile -> {
+                    R.string.perfil
                 }
-                R.id.action_start -> {Toast.makeText(context, "Pulsado inicio", Toast.LENGTH_SHORT).show()
+                R.id.action_start -> {
+                    R.string.inicio
                 }
-
-                else -> {Toast.makeText(context, "Pulsado favoritos", Toast.LENGTH_SHORT).show()}
+                else -> {
+                    R.string.favoritos
+                }
             }
+            Snackbar.make(binding.root, resMessage, Snackbar.LENGTH_SHORT)
+                .setAnchorView(binding.fab)
+                .show()
             true
 
+        }
+
+        binding.bottomAppBar.setNavigationOnClickListener {
+            Snackbar.make(binding.root, R.string.message_action_success, Snackbar.LENGTH_SHORT)
+                .setAnchorView(binding.fab)
+                .show()
         }
 
 
