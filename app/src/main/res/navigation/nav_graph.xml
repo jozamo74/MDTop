@@ -21,6 +21,9 @@
         <action
             android:id="@+id/action_homeFragment_to_appBarFragment"
             app:destination="@id/appBarFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_pickerFragment"
+            app:destination="@id/pickerFragment" />
     </fragment>
     <fragment
         android:id="@+id/cardViewFragment"
@@ -68,4 +71,9 @@
         android:name="com.example.mdtop.AppBarBottomFragment"
         android:label="fragment_app_bar_bottom"
         tools:layout="@layout/fragment_app_bar_bottom" />
+    <fragment
+        android:id="@+id/pickerFragment"
+        android:name="com.example.mdtop.PickerFragment"
+        android:label="fragment_picker"
+        tools:layout="@layout/fragment_picker" />
 </navigation>

@@ -34,6 +34,9 @@ class HomeFragment : Fragment(R.layout.fragment_home) {
         binding.btnAppBar.setOnClickListener {
             findNavController().navigate(R.id.appBarFragment)
         }
+
+        binding.btnPicker.setOnClickListener {
+            findNavController().navigate(R.id.pickerFragment) }
     }
 
 }

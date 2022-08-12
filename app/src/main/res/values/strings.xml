@@ -34,4 +34,9 @@
     <string name="appBar">appbar</string>
     <string name="app_bar_top">app bar top</string>
     <string name="app_bar_bottom">app bar bottom</string>
+    <string name="picker">picker</string>
+    <string name="picker_dialog">picker dialog</string>
+    <string name="picker_fullscreen">picker fullscreen</string>
+    <string name="picker_title">Seleccione fecha</string>
+    <string name="dialog_negative">negative button</string>
 </resources>
