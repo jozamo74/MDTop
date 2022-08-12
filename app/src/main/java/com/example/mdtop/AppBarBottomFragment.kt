@@ -1,15 +1,12 @@
 package com.example.mdtop
 
 import android.os.Bundle
-import androidx.fragment.app.Fragment
-import android.view.LayoutInflater
 import android.view.View
-import android.view.ViewGroup
-import android.widget.Toast
 import androidx.fragment.app.DialogFragment
 import com.example.mdtop.databinding.FragmentAppBarBottomBinding
 import com.google.android.material.bottomappbar.BottomAppBar.FAB_ALIGNMENT_MODE_CENTER
 import com.google.android.material.bottomappbar.BottomAppBar.FAB_ALIGNMENT_MODE_END
+import com.google.android.material.shape.MaterialShapeDrawable
 import com.google.android.material.snackbar.Snackbar
 
 
@@ -25,6 +22,8 @@ class AppBarBottomFragment : DialogFragment(R.layout.fragment_app_bar_bottom) {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
+
+
         binding = FragmentAppBarBottomBinding.bind(view)
 
         binding.fab.setOnClickListener {
@@ -62,6 +61,21 @@ class AppBarBottomFragment : DialogFragment(R.layout.fragment_app_bar_bottom) {
                 .setAnchorView(binding.fab)
                 .show()
         }
+
+        val bottomAppBarCutCornersTopEdge = BottomAppBarCutCornersTopEdge(
+            binding.bottomAppBar.fabCradleMargin,
+            binding.bottomAppBar.fabCradleRoundedCornerRadius,
+            binding.bottomAppBar.cradleVerticalOffset
+        )
+
+        val shapeDrawable: MaterialShapeDrawable = binding.bottomAppBar.background as MaterialShapeDrawable
+        shapeDrawable.shapeAppearanceModel =
+
+
+        shapeDrawable.shapeAppearanceModel
+            .toBuilder()
+            .setTopEdge(bottomAppBarCutCornersTopEdge)
+            .build()
 
 
     }

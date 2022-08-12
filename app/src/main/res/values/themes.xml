@@ -12,5 +12,9 @@
         <!-- Status bar color. -->
         <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
         <!-- Customize your theme here. -->
+
+    <!-- Shape-->
+        <item name="shapeAppearanceSmallComponent">@style/ShapeAppearance.Theme.MDTop.SmallComponent</item>
+
     </style>
 </resources>
