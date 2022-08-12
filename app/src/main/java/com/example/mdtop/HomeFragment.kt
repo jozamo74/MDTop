@@ -30,6 +30,10 @@ class HomeFragment : Fragment(R.layout.fragment_home) {
         binding.btnDialog.setOnClickListener {
             findNavController().navigate(R.id.alertDialogFragment)
         }
+
+        binding.btnAppBar.setOnClickListener {
+            findNavController().navigate(R.id.appBarFragment)
+        }
     }
 
 }

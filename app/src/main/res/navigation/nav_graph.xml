@@ -18,6 +18,9 @@
         <action
             android:id="@+id/action_homeFragment_to_alertDialogFragment2"
             app:destination="@id/alertDialogFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_appBarFragment"
+            app:destination="@id/appBarFragment" />
     </fragment>
     <fragment
         android:id="@+id/cardViewFragment"
@@ -43,4 +46,26 @@
         android:name="com.example.mdtop.FullScreenDialogFragment"
         android:label="fragment_full_screen_dialog"
         tools:layout="@layout/fragment_full_screen_dialog" />
+    <fragment
+        android:id="@+id/appBarFragment"
+        android:name="com.example.mdtop.AppBarFragment"
+        android:label="fragment_app_bar"
+        tools:layout="@layout/fragment_app_bar" >
+        <action
+            android:id="@+id/action_appBarFragment_to_appBarTopFragment2"
+            app:destination="@id/appBarTopFragment" />
+        <action
+            android:id="@+id/action_appBarFragment_to_appBarBottomFragment"
+            app:destination="@id/appBarBottomFragment" />
+    </fragment>
+    <dialog
+        android:id="@+id/appBarTopFragment"
+        android:name="com.example.mdtop.AppBarTopFragment"
+        android:label="fragment_app_bar_top"
+        tools:layout="@layout/fragment_app_bar_top" />
+    <dialog
+        android:id="@+id/appBarBottomFragment"
+        android:name="com.example.mdtop.AppBarBottomFragment"
+        android:label="fragment_app_bar_bottom"
+        tools:layout="@layout/fragment_app_bar_bottom" />
 </navigation>

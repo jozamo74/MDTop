@@ -31,4 +31,7 @@
     <string name="hint_name">Name</string>
     <string name="hint_password">password</string>
     <string name="dialog_full_screen">Full Screen</string>
+    <string name="appBar">appbar</string>
+    <string name="app_bar_top">app bar top</string>
+    <string name="app_bar_bottom">app bar bottom</string>
 </resources>

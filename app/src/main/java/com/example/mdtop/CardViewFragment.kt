@@ -41,7 +41,7 @@ class CardViewFragment : Fragment(R.layout.fragment_card_view) {
                 Toast.makeText(context, "Pulsado chip primero", Toast.LENGTH_SHORT).show()
             }
 
-            chipSecond.setOnCheckedChangeListener { compoundButton, isChecked ->
+            chipSecond.setOnCheckedChangeListener { _, isChecked ->
                 if (isChecked){
                     Toast.makeText(context, "Checked 2", Toast.LENGTH_SHORT).show()
                 }

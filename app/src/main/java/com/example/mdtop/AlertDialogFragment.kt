@@ -15,8 +15,8 @@ class AlertDialogFragment : Fragment(R.layout.fragment_dialog) {
     private lateinit var binding: FragmentDialogBinding
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
-        binding = FragmentDialogBinding.bind(view)
         super.onViewCreated(view, savedInstanceState)
+        binding = FragmentDialogBinding.bind(view)
 
         setupListener()
     }

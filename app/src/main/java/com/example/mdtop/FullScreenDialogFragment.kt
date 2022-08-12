@@ -19,17 +19,12 @@ class FullScreenDialogFragment : DialogFragment(R.layout.fragment_full_screen_di
         setStyle(STYLE_NORMAL, R.style.FullScreenDialog)
     }
 
-    override fun onCreateView(
-        inflater: LayoutInflater, container: ViewGroup?,
-        savedInstanceState: Bundle?
-    ): View? {
-        // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_full_screen_dialog, container, false)
-    }
+
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
-        binding = FragmentFullScreenDialogBinding.bind(view)
         super.onViewCreated(view, savedInstanceState)
+
+        binding = FragmentFullScreenDialogBinding.bind(view)
 
         setupToolbar()
 
@@ -49,9 +44,5 @@ class FullScreenDialogFragment : DialogFragment(R.layout.fragment_full_screen_di
             setNavigationIcon(R.drawable.ic_close)
             setNavigationOnClickListener { dismiss() }
         }
-    }
-
-    companion object {
-        val TAG = "FullScreenDialogFragment"
     }
 }
