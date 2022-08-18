@@ -27,6 +27,9 @@
         <action
             android:id="@+id/action_homeFragment_to_navigationDrawerFragment"
             app:destination="@id/navigationDrawerFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_sheetsBottomFragment"
+            app:destination="@id/sheetsBottomFragment" />
     </fragment>
     <fragment
         android:id="@+id/cardViewFragment"
@@ -101,4 +104,9 @@
         android:name="com.example.mdtop.BottomNavigationDrawerFragment"
         android:label="fragment_bottom_navigation_drawer"
         tools:layout="@layout/fragment_bottom_navigation_drawer" />
+    <fragment
+        android:id="@+id/sheetsBottomFragment"
+        android:name="com.example.mdtop.SheetsBottomFragment"
+        android:label="fragment_sheets_bottom"
+        tools:layout="@layout/fragment_sheets_bottom" />
 </navigation>

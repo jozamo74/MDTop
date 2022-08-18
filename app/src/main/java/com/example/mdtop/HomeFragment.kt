@@ -41,6 +41,12 @@ class HomeFragment : Fragment(R.layout.fragment_home) {
         binding.btnNavigationDrawable.setOnClickListener {
             findNavController().navigate(R.id.navigationDrawerFragment)
         }
+
+        binding.btnSheetsBottom.setOnClickListener {
+            findNavController().navigate(R.id.sheetsBottomFragment)
+        }
+
+
     }
 
 

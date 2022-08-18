@@ -42,4 +42,16 @@
     <string name="navigation_drawable">navigation drawable</string>
     <string name="modal_drawer">modal drawer</string>
     <string name="bottom_drawable">bottom drawable</string>
+    <string name="sheets_standar_bottom">standar bottom</string>
+    <string name="sheets_modal_bottom">model bottom</string>
+    <string name="Sheets_bottom">sheets bottom</string>
+    <string name="sheets_bottom_standar_place_title">Cursos Android ANT</string>
+    <string name="sheets_bottom_standar_place_type">Courses online</string>
+    <string name="sheets_bottom_standar_place_link">Webside</string>
+    <string name="sheets_bottom_standar_place_call">call</string>
+    <string name="sheets_bottom_standar_place_save">save</string>
+    <string name="sheets_bottom_standar_place_timeline">2 days ago</string>
+    <string name="sheets_bottom_standar_place_address">6458 Main Street</string>
+    <string name="sheets_bottom_standar_place_schedule">Closed</string>
+    <string name="sheets_bottom_standar_place_make_question">Ask something</string>
 </resources>
