@@ -24,6 +24,9 @@
         <action
             android:id="@+id/action_homeFragment_to_pickerFragment"
             app:destination="@id/pickerFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_navigationDrawerFragment"
+            app:destination="@id/navigationDrawerFragment" />
     </fragment>
     <fragment
         android:id="@+id/cardViewFragment"
@@ -76,4 +79,26 @@
         android:name="com.example.mdtop.PickerFragment"
         android:label="fragment_picker"
         tools:layout="@layout/fragment_picker" />
+    <fragment
+        android:id="@+id/navigationDrawerFragment"
+        android:name="com.example.mdtop.NavigationDrawerFragment"
+        android:label="fragment_navigation_drawer"
+        tools:layout="@layout/fragment_navigation_drawer" >
+        <action
+            android:id="@+id/action_navigationDrawerFragment_to_modalNavigationDrawerFragment"
+            app:destination="@id/modalNavigationDrawerFragment" />
+        <action
+            android:id="@+id/action_navigationDrawerFragment_to_bottomNavigationDrawerFragment"
+            app:destination="@id/bottomNavigationDrawerFragment" />
+    </fragment>
+    <dialog
+        android:id="@+id/modalNavigationDrawerFragment"
+        android:name="com.example.mdtop.ModalNavigationDrawerFragment"
+        android:label="fragment_modal_navigation_drawer"
+        tools:layout="@layout/fragment_modal_navigation_drawer" />
+    <dialog
+        android:id="@+id/bottomNavigationDrawerFragment"
+        android:name="com.example.mdtop.BottomNavigationDrawerFragment"
+        android:label="fragment_bottom_navigation_drawer"
+        tools:layout="@layout/fragment_bottom_navigation_drawer" />
 </navigation>

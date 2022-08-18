@@ -9,14 +9,20 @@
         <entry key="app/src/main/res/layout/fragment_app_bar.xml" value="0.35208333333333336" />
         <entry key="app/src/main/res/layout/fragment_app_bar_bottom.xml" value="0.35208333333333336" />
         <entry key="app/src/main/res/layout/fragment_app_bar_top.xml" value="0.33541666666666664" />
+        <entry key="app/src/main/res/layout/fragment_bottom_navigation_drawer.xml" value="0.35208333333333336" />
         <entry key="app/src/main/res/layout/fragment_card_view.xml" value="0.33" />
         <entry key="app/src/main/res/layout/fragment_dialog.xml" value="0.25" />
         <entry key="app/src/main/res/layout/fragment_full_screen_dialog.xml" value="0.33" />
         <entry key="app/src/main/res/layout/fragment_home.xml" value="0.35208333333333336" />
         <entry key="app/src/main/res/layout/fragment_menu.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/fragment_modal_bottom.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/fragment_modal_bottom_sheet.xml" value="0.33541666666666664" />
+        <entry key="app/src/main/res/layout/fragment_modal_navigation_drawer.xml" value="0.35208333333333336" />
+        <entry key="app/src/main/res/layout/fragment_navigation_drawer.xml" value="0.35208333333333336" />
         <entry key="app/src/main/res/layout/fragment_picker.xml" value="0.35208333333333336" />
         <entry key="app/src/main/res/layout/item_menu_dropdonw.xml" value="0.35104166666666664" />
         <entry key="app/src/main/res/menu/menu.xml" value="0.35104166666666664" />
+        <entry key="app/src/main/res/menu/menu_modal_drawer.xml" value="0.35052083333333334" />
       </map>
     </option>
   </component>

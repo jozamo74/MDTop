@@ -62,7 +62,9 @@ class AppBarBottomFragment : DialogFragment(R.layout.fragment_app_bar_bottom) {
                 .setAnchorView(binding.fab)
                 .show()
         }
+    }
 
-
+    companion object {
+        val TAG = "appbarbottom"
     }
 }

@@ -37,6 +37,11 @@ class HomeFragment : Fragment(R.layout.fragment_home) {
 
         binding.btnPicker.setOnClickListener {
             findNavController().navigate(R.id.pickerFragment) }
+
+        binding.btnNavigationDrawable.setOnClickListener {
+            findNavController().navigate(R.id.navigationDrawerFragment)
+        }
     }
+
 
 }

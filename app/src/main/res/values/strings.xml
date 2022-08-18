@@ -39,4 +39,7 @@
     <string name="picker_fullscreen">picker fullscreen</string>
     <string name="picker_title">Seleccione fecha</string>
     <string name="dialog_negative">negative button</string>
+    <string name="navigation_drawable">navigation drawable</string>
+    <string name="modal_drawer">modal drawer</string>
+    <string name="bottom_drawable">bottom drawable</string>
 </resources>

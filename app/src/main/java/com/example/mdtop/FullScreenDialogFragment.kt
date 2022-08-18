@@ -45,4 +45,9 @@ class FullScreenDialogFragment : DialogFragment(R.layout.fragment_full_screen_di
             setNavigationOnClickListener { dismiss() }
         }
     }
+
+    companion object {
+        val TAG = "FragmentFullScreenDialogBinding"
+    }
+
 }
