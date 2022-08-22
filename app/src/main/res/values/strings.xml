@@ -56,4 +56,5 @@
     <string name="sheets_bottom_standar_place_make_question">Ask something</string>
     <string name="hint_username">Username</string>
     <string name="user">user</string>
+    <string name="motion">Motion</string>
 </resources>

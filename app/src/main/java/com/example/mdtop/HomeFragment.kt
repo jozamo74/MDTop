@@ -46,6 +46,8 @@ class HomeFragment : Fragment(R.layout.fragment_home) {
             findNavController().navigate(R.id.sheetsBottomFragment)
         }
 
+        binding.btnMotion.setOnClickListener { findNavController().navigate(R.id.motionFragment) }
+
 
     }
 

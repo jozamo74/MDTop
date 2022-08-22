@@ -30,6 +30,9 @@
         <action
             android:id="@+id/action_homeFragment_to_sheetsBottomFragment"
             app:destination="@id/sheetsBottomFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_motionFragment"
+            app:destination="@id/motionFragment" />
     </fragment>
     <fragment
         android:id="@+id/cardViewFragment"
@@ -109,4 +112,9 @@
         android:name="com.example.mdtop.SheetsBottomFragment"
         android:label="fragment_sheets_bottom"
         tools:layout="@layout/fragment_sheets_bottom" />
+    <fragment
+        android:id="@+id/motionFragment"
+        android:name="com.example.mdtop.MotionFragment"
+        android:label="fragment_motion"
+        tools:layout="@layout/fragment_motion" />
 </navigation>
