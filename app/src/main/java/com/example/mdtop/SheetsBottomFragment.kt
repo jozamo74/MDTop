@@ -79,6 +79,15 @@ class SheetsBottomFragment : Fragment() {
 
         }
 
+        binding.btnModal.setOnClickListener {
+            val fragment = ModalBottomSheetFullScreenFragment()
+            fragment.show(
+                childFragmentManager.beginTransaction(),
+                ModalBottomSheetFullScreenFragment.TAG
+            )
+
+        }
+
         binding.includeBottomSheet.btnResize.setOnClickListener {
             if (mIsExpanded) {
                 mBottomSheetBehavior.state = BottomSheetBehavior.STATE_COLLAPSED
@@ -86,6 +95,7 @@ class SheetsBottomFragment : Fragment() {
                 mBottomSheetBehavior.state = BottomSheetBehavior.STATE_EXPANDED
             }
         }
+
     }
 
     override fun onDestroy() {
