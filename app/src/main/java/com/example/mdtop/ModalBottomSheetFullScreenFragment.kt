@@ -4,16 +4,18 @@ import android.app.Dialog
 import android.content.res.Resources
 import android.os.Bundle
 import android.util.Log
+import android.view.Gravity
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.core.content.ContextCompat
+import androidx.transition.TransitionManager
 import com.example.mdtop.databinding.FragmentModalBottomSheetFullScreenBinding
 import com.google.android.material.bottomsheet.BottomSheetBehavior
 import com.google.android.material.bottomsheet.BottomSheetDialog
 import com.google.android.material.bottomsheet.BottomSheetDialogFragment
-
-
+import com.google.android.material.transition.MaterialFadeThrough
+import com.google.android.material.transition.SlideDistanceProvider
 
 
 class ModalBottomSheetFullScreenFragment : BottomSheetDialogFragment() {
@@ -60,13 +62,19 @@ class ModalBottomSheetFullScreenFragment : BottomSheetDialogFragment() {
 
                 override fun onStateChanged(bottomSheet: View, newState: Int) {
 
+                    val mMaterialFadeThrough = MaterialFadeThrough()
+                    mMaterialFadeThrough.secondaryAnimatorProvider = SlideDistanceProvider(Gravity.TOP)
+                    mMaterialFadeThrough.duration = 250L
+
+                    TransitionManager.beginDelayedTransition(binding.containerBar, mMaterialFadeThrough)
+
                     var statusBarColor = ContextCompat.getColor(requireContext(), R.color.purple_700)
 
                     if (BottomSheetBehavior.STATE_EXPANDED == newState) {
                         Log.d("HOLA", "EXPANDED $newState")
                         with(binding){
-                            appBar.visibility = View.VISIBLE
                             tvBar.visibility = View.GONE
+                            appBar.visibility = View.VISIBLE
                             statusBarColor = ContextCompat.getColor(requireContext(), R.color.colorAccent)
                         }
                     } else {
