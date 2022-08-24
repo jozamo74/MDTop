@@ -59,4 +59,6 @@
     <string name="motion">Motion</string>
     <string name="description_floatingActionButton">botón con motion</string>
     <string name="setting">Setting</string>
+    <string name="motion_button_back">back</string>
+    <string name="motion_button_next">next</string>
 </resources>

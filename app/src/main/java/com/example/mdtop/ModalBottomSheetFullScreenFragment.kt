@@ -1,20 +1,14 @@
 package com.example.mdtop
 
 import android.app.Dialog
-import android.content.Context
 import android.content.res.Resources
 import android.os.Bundle
 import android.util.Log
-import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import androidx.constraintlayout.widget.ConstraintLayout
 import androidx.core.content.ContextCompat
-import com.example.mdtop.databinding.ActivityMainBinding.inflate
 import com.example.mdtop.databinding.FragmentModalBottomSheetFullScreenBinding
-import com.example.mdtop.databinding.FragmentSheetsBottomBinding
-import com.example.mdtop.databinding.ItemMenuDropdonwBinding.inflate
 import com.google.android.material.bottomsheet.BottomSheetBehavior
 import com.google.android.material.bottomsheet.BottomSheetDialog
 import com.google.android.material.bottomsheet.BottomSheetDialogFragment

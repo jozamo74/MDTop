@@ -8,6 +8,7 @@ import androidx.transition.TransitionManager
 import com.example.mdtop.databinding.FragmentMotionBinding
 import com.google.android.material.transition.MaterialArcMotion
 import com.google.android.material.transition.MaterialContainerTransform
+import com.google.android.material.transition.MaterialSharedAxis
 
 
 class MotionFragment : Fragment(R.layout.fragment_motion) {
@@ -18,6 +19,7 @@ class MotionFragment : Fragment(R.layout.fragment_motion) {
         super.onViewCreated(view, savedInstanceState)
         binding = FragmentMotionBinding.bind(view)
 
+        binding.fragmentDialog.btnDialogFullScreen.setText(R.string.motion_button_next)
         setupListener()
     }
 
@@ -51,6 +53,30 @@ class MotionFragment : Fragment(R.layout.fragment_motion) {
             with(binding){
                 viewStart.visibility = View.GONE
                 viewEnd.visibility = View.VISIBLE
+            }
+        }
+
+        binding.fragmentDialog.btnDialogFullScreen.setOnClickListener {
+            val sharedAxis = MaterialSharedAxis(MaterialSharedAxis.X, true)
+
+            TransitionManager.beginDelayedTransition(binding.viewEnd, sharedAxis)
+
+            with(binding) {
+                viewIn.visibility = View.VISIBLE
+                viewOut.visibility = View.GONE
+
+            }
+        }
+
+        binding.btnBack.setOnClickListener {
+            val sharedAxis = MaterialSharedAxis(MaterialSharedAxis.X, false)
+
+            TransitionManager.beginDelayedTransition(binding.viewEnd, sharedAxis)
+
+            with(binding) {
+                viewIn.visibility = View.GONE
+                viewOut.visibility = View.VISIBLE
+
             }
         }
     }
