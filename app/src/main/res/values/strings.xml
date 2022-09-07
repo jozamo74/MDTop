@@ -61,4 +61,7 @@
     <string name="setting">Setting</string>
     <string name="motion_button_back">back</string>
     <string name="motion_button_next">next</string>
+    <string name="TextFields">Text Fields</string>
+    <string name="textFields_email">Correo</string>
+    <string name="gmail">\@gmail.com</string>
 </resources>

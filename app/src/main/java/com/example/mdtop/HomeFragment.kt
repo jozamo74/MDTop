@@ -48,6 +48,8 @@ class HomeFragment : Fragment(R.layout.fragment_home) {
 
         binding.btnMotion.setOnClickListener { findNavController().navigate(R.id.motionFragment) }
 
+        binding.btnTextField.setOnClickListener { findNavController().navigate(R.id.textFieldsFragment) }
+
 
     }
 

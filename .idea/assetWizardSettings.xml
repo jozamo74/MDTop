@@ -18,7 +18,7 @@
                                 <PersistentState>
                                   <option name="values">
                                     <map>
-                                      <entry key="url" value="jar:file:/opt/android-studio-2021.2.1/android-studio/plugins/android/lib/android.jar!/images/material/icons/materialicons/filter_list/baseline_filter_list_24.xml" />
+                                      <entry key="url" value="file:$USER_HOME$/Android/Sdk/icons/material/materialicons/email/baseline_email_24.xml" />
                                     </map>
                                   </option>
                                 </PersistentState>
@@ -28,7 +28,7 @@
                         </option>
                         <option name="values">
                           <map>
-                            <entry key="outputName" value="ic_filter_list" />
+                            <entry key="outputName" value="ic_email" />
                           </map>
                         </option>
                       </PersistentState>

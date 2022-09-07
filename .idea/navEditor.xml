@@ -146,6 +146,11 @@
                                 <LayoutPositions />
                               </value>
                             </entry>
+                            <entry key="action_homeFragment_to_motionFragment">
+                              <value>
+                                <LayoutPositions />
+                              </value>
+                            </entry>
                             <entry key="action_homeFragment_to_navigationDrawerFragment">
                               <value>
                                 <LayoutPositions />
@@ -157,6 +162,11 @@
                               </value>
                             </entry>
                             <entry key="action_homeFragment_to_sheetsBottomFragment">
+                              <value>
+                                <LayoutPositions />
+                              </value>
+                            </entry>
+                            <entry key="action_homeFragment_to_textFieldsFragment">
                               <value>
                                 <LayoutPositions />
                               </value>
@@ -247,6 +257,18 @@
                           <Point>
                             <option name="x" value="256" />
                             <option name="y" value="724" />
+                          </Point>
+                        </option>
+                      </LayoutPositions>
+                    </value>
+                  </entry>
+                  <entry key="textFieldsFragment">
+                    <value>
+                      <LayoutPositions>
+                        <option name="myPosition">
+                          <Point>
+                            <option name="x" value="162" />
+                            <option name="y" value="-1005" />
                           </Point>
                         </option>
                       </LayoutPositions>
